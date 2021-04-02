@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="20" width="${totalWidth}">
+    <!-- SONARQUBE MEASURE -->
+    <linearGradient id="b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+        <stop offset="1" stop-opacity=".1"/>
+    </linearGradient>
+    <clipPath id="a">
+        <rect width="${totalWidth}" height="20" rx="3" fill="#fff"/>
+    </clipPath>
+    <g clip-path="url(#a)">
+        <rect fill="#555" height="20" width="${leftWidth}"/>
+        <rect fill="${color}" height="20" width="${rightWidth}" x="${leftWidth}"/>
+        <rect fill="url(#b)" height="20" width="${totalWidth}"/>
+    </g>
+    <g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11" text-anchor="left">
+        <text x="${iconWidthPlusMargin}" y="15" textLength="${labelWidth}" fill="#010101" fill-opacity=".3">${label}</text>
+        <text x="${iconWidthPlusMargin}" y="14" textLength="${labelWidth}">${label}</text>
+        <text x="${leftWidthPlusMargin}" y="15" textLength="${valueWidth}" fill="#010101" fill-opacity=".3">${value}</text>
+        <text x="${leftWidthPlusMargin}" y="14" textLength="${valueWidth}">${value}</text>
+    </g>
+    <g fill="#4e9bcd">
+        <path d="M17.975 16.758h-.815c0-6.557-5.411-11.893-12.062-11.893v-.813c7.102 0 12.877 5.7 12.877 12.706z"/>
+        <path d="M18.538 12.386c-.978-4.116-4.311-7.55-8.49-8.748l.186-.65c4.411 1.266 7.93 4.895 8.964 9.243zm.626-3.856a12.48 12.48 0 0 0-4.832-5.399l.282-.464a13.031 13.031 0 0 1 5.044 5.63z"/>
+    </g>
+</svg>

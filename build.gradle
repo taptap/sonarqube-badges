@@ -1,0 +1,53 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.4'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'distribution'
+    id 'java'
+}
+
+group = 'com.github.taptap'
+version = '0.1'
+sourceCompatibility = '1.8'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+distributions {
+    main {
+        contents {
+            into('/') {  // Copy the following jars to the lib/ directory in the distribution archive
+                from file("build/libs/")
+                from file("src/main/assembly/")
+                dirMode = 0755
+                fileMode = 0644
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation "com.baomidou:mybatis-plus-boot-starter:3.3.1"
+    implementation("com.google.guava:guava:30.1.1-android")
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'commons-lang:commons-lang:2.6'
+
+    compileOnly 'org.projectlombok:lombok'
+    runtimeOnly 'org.postgresql:postgresql'
+
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}
