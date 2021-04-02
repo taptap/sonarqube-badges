@@ -49,9 +49,9 @@ Execute `startup.sh` to start the application
 
 For example ：http://localhost:8080/api/project_badges/measure?project=server_services_developer_AXaIXEx52AMDJFWZUd_4&metric=bugs
 
-Response ： `svg` Badges
+Response ： `SVG` Badges
 
-> qualityGate badge interface
+> quality gate badge interface
 
 `GET` `/api/project_badges/quality_gate`
 
@@ -63,9 +63,9 @@ Response ： `svg` Badges
 
 For example ：http://localhost:8080/api/project_badges/measure?project=server_services_developer_AXaIXEx52AMDJFWZUd_4
 
-Response ： `svg` Badges
+Response ： `SVG` Badges
 
-> Get all measure badges of the specified project `url` collection interface
+> Get all measure badges of the specified project `URL` collection interface
 
 `GET` `/api/project_badges_tools/measure/url`
 
@@ -162,5 +162,5 @@ Building
 In the root directory of the project, execute the above script. After successful execution, a build directory will be generated in the root directory. The distribution package is in `build/distributions/sonarqube-badges-0.1.tar`
 ## Principle Introduction
 
-By linking to the database of sonarqube, the project analysis data of sonarqube can be directly obtained. Then the url design of sonarqube-badges is the same as sonarqube, `svg` generates the sonarqube of style copy
+By linking to the database of sonarqube, the project analysis data of sonarqube can be directly obtained. Then the URL design of sonarqube-badges is the same as sonarqube, `SVG` generates the sonarqube of style copy
 Open source code, so the style remains exactly the same as sonarqube
