@@ -2,7 +2,7 @@
 
 # sonarqube-badges
 
-SonarQube 的项目质量分析结果徽章生成的项目，解决了 SonarQube 不能将徽章用于私人项目的问题。相关的背景链接如下：
+SonarQube 的项目质量分析结果徽章生成的项目，解决了 SonarQube 不能将徽章用于私有项目的问题。相关的背景链接如下：
 
 - https://jira.sonarsource.com/browse/MMF-1942
 - https://community.sonarsource.com/t/badges-on-private-projects/4894/20
@@ -32,7 +32,7 @@ sonar.base-url=https://qa-sonar.dev.com
 sonar.badges-base-url=http://localhost:8080
 ```
 
-执行 `sstartup.sh` 启动应用
+执行 `startup.sh` 启动应用
 
 - 2、使用
 

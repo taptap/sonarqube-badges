@@ -33,7 +33,7 @@ sonar.base-url=https://qa-sonar.dev.com
 sonar.badges-base-url=http://localhost:8080
 ```
 
-Execute `sstartup.sh` to start the application
+Execute `startup.sh` to start the application
 
 - 2、Usage
 
