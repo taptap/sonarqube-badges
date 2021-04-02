@@ -1,3 +1,5 @@
+简体中文 | [English](./README.md)
+
 # sonarqube-badges
 
 SonarQube 的项目质量分析结果徽章生成的项目，解决了 SonarQube 不能将徽章用于私人项目的问题。相关的背景链接如下：
@@ -13,7 +15,7 @@ SonarQube 的项目质量分析结果徽章生成的项目，解决了 SonarQube
 自己编译，或下载已编译的发行包。
 
 ```shell
-wget xxx.zip
+wget https://github.com/TapTap/sonarqube-badges/releases/download/v0.1/sonarqube-badges-0.1.tar
 ```  
 
 解压后，修改`conf.properties`配置文件，配置你的 sonarqube 的数据库信息。如：
