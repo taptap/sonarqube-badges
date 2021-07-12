@@ -29,7 +29,7 @@ public class BranchService {
         if (branchName == null) {
             branch = branchRepository.findByProjectUid(project.getUuid());
         } else {
-            branch = branchRepository.findByBranchName(projectKey, branchName);
+            branch = branchRepository.findByBranchName(project.getUuid(), branchName);
         }
 
         if (!BRANCH.equals(branch.getBranchType())) {
