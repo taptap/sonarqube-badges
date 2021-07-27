@@ -23,16 +23,16 @@ public class BranchService {
         this.projectRepository = projectRepository;
     }
 
-    public Branch getBranch(String branchName,String projectKey){
+    public Branch getBranch(String branchName, String projectKey) {
         Project project = projectRepository.findByKee(projectKey);
         Branch branch;
         if (branchName == null) {
             branch = branchRepository.findByProjectUid(project.getUuid());
         } else {
-            branch = branchRepository.findByBranchName(projectKey,branchName);
+            branch = branchRepository.findByBranchName(project.getUuid(), branchName);
         }
 
-        if (!branch.getBranchType().equals(BRANCH)) {
+        if (!BRANCH.equals(branch.getBranchType())) {
             throw new ProjectBadgesException("Project is invalid");
         }
 
