@@ -26,7 +26,6 @@ public class Metric {
     private String domain;
     private int direction;
     private boolean qualitative;
-    private boolean userManaged;
     private Double worstValue;
     private Double bestValue;
     private boolean optimizedBestValue;
